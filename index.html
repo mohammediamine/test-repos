@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>todoliste</title>
+</head>
+
+<body>
+    <div class="nav-todo">
+        <span class="nav-span">Our Keep</span>
+        <div onclick="creatNote()" class="nav-tudo-add-btn">
+            <span>+</span>
+        </div>
+
+    </div>
+    <div class="main">
+        <div id="notes" class="container">
+            <!-- <div  class="card">
+
+
+
+                <div id="cardhead" class="card-head">
+                    <span>Titre Note</span>
+                    <img onclick="deletNote(this)" src="./images.svg" alt="">
+                </div>
+                <div id="cardcontent" class="card-content">
+                    <span>Le choix des maires par le pouvoir central est mis en place pour la première fois sous le
+                        Premier Empire ; ses contours sont ensuite modifiés par les régimes qui lui succèdent. La
+                        nomination des maires est votée en 1871 par une Assemblée nationale initialement favorable aux
+                        libertés locales mais dont l'assentiment est obtenu par Adolphe Thiers dans un contexte
+                        d'insurrections communales ;</span>
+                </div>
+
+
+            </div> -->
+
+        </div>
+        <div id="popup" class="popup-container">
+            <div class="popup">
+
+                <span class="popup-title">Ajouter une Note</span>
+                <input id="input" placeholder="Votre Titre" type="text">
+                <textarea id="textarea" rows="10"></textarea>
+                <div class="actions">
+                    <div onclick="creatNote()" class="creat">
+                        <span>Creer</span>
+                    </div>
+                    <div onclick="closePopup()" class="cancel">
+                        <span>Fermer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+</body>
+
+</html>
+<!-- git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/mohammediamine/test-repos. git
+ git push -u origin main -->
